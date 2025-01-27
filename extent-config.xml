@@ -1,0 +1,15 @@
+<configuration>
+    <reportName>Automation Report</reportName>
+    <documentTitle>Automation Test Results</documentTitle>
+    <theme>Dark</theme>
+    <!-- <browsers>
+        <browser name="Edge">
+            <param name="Browser" value="Edge"/>
+            <param name="DriverPath" value="path/to/edge/driver"/>
+        </browser>
+        <browser name="Chrome">
+            <param name="Browser" value="Chrome"/>
+            <param name="DriverPath" value="path/to/chrome/driver"/>
+        </browser>
+    </browsers> -->
+</configuration>

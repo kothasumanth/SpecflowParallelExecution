@@ -1,1 +1,1 @@
-# SpecflowParallelExecution
+# BDD Specflow CSharp Selenium Edge Driver Parallel Execution using NUnit (Feature file level) - Working Solution

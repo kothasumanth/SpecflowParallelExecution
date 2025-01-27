@@ -1,0 +1,48 @@
+{
+  "specFlow": {
+    "bindingCulture": {
+      "name": "en-US"
+    },
+    "language": {
+      "feature": "en"
+    },
+    "runtime": {
+      "stopAtFirstError": false,
+      "missingOrPendingStepsOutcome": "Inconclusive"
+    },
+    "trace": {
+      "traceSuccessfulSteps": true,
+      "traceTimings": true,
+      "minTracedDuration": "0:0:0.1"
+    },
+    "stepAssemblies": [
+      {
+        "assembly": "SpecflowParallelExecution"
+      }
+    ],
+    "plugins": [
+      {
+        "name": "SpecFlow.NUnit",
+        "type": "Runtime"
+      }
+    ],
+    "generator": {
+      "allowDebugGeneratedFiles": false,
+      "allowRowTests": true,
+      "markFeaturesParallelizable": true
+    },
+    "execution": {
+      "stopAtFirstError": false,
+      "retryFor": {
+        "errors": [
+          "System.Net.WebException"
+        ],
+        "count": 3
+      },
+      "parallelExecution": {
+        "testThreadCount": 4,
+        "syncTestExecution": false
+      }
+    }
+  }
+}
